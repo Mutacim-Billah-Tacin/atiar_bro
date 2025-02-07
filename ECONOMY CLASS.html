@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Economics Videos - Ultimate Experience</title>
+  <!-- Google Fonts for Typography Harmony -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* CSS Variables for Soft Color Palette & Neumorphism */
+    :root {
+      --primary: #6C63FF;
+      --secondary: #FF6584;
+      --accent: #FFB74D;
+      --bg: #f0f2f5;
+      --card-bg: #ffffff;
+      --text: #333333;
+      --shadow-light: rgba(255, 255, 255, 0.7);
+      --shadow-dark: rgba(0, 0, 0, 0.15);
+    }
+    /* Dark Mode Overrides using prefers-color-scheme */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1e1e1e;
+        --card-bg: #2c2c2c;
+        --text: #eeeeee;
+        --primary: #8a82ff;
+        --secondary: #ff92a2;
+        --shadow-light: rgba(0, 0, 0, 0.5);
+        --shadow-dark: rgba(255, 255, 255, 0.1);
+      }
+    }
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Navigation with Neumorphism & Micro-interactions */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: var(--card-bg);
+      box-shadow: 0 2px 5px var(--shadow-dark);
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+    nav .logo {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    nav a {
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--primary);
+    }
+    /* Main Content Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      /* Added top padding to account for the fixed nav bar */
+      padding: 80px 20px 60px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      width: 100px;
+      height: 4px;
+      background: var(--primary);
+      display: block;
+      margin: 15px auto 0;
+    }
+    /* Grid Layout for Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    /* Cards with Neumorphic Design & Micro-interactions */
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 12px 12px 24px var(--shadow-dark), -12px -12px 24px var(--shadow-light);
+    }
+    .card h3 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+    .card a {
+      display: block;
+      background: var(--bg);
+      padding: 10px 15px;
+      margin: 8px 0;
+      border-radius: 10px;
+      transition: background 0.3s ease, transform 0.3s ease;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .card a:hover {
+      background: var(--primary);
+      color: #fff;
+      transform: scale(1.02);
+    }
+    /* Minimalist Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: var(--card-bg);
+      box-shadow: 0 -2px 5px var(--shadow-dark);
+      font-size: 0.9rem;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo"><strong>Economics Videos</strong></div>
+    <div class="nav-links">
+      <a href="#paper1">1st Paper</a>
+      <a href="#paper2">2nd Paper</a>
+    </div>
+  </nav>
+  
+  <!-- Main Content Container (Header Removed) -->
+  <div class="container">
+    <!-- 1st Paper Section -->
+    <section id="paper1">
+      <h2 class="section-title">1st Paper</h2>
+      <div class="grid">
+        <!-- Chapter 1 -->
+        <div class="card">
+          <h3>Chapter 1</h3>
+          <a href="https://youtu.be/SiPmgHB0Y6A" target="_blank">Video 1</a>
+          <a href="https://youtu.be/Qwip7jJCYdY" target="_blank">Video 2</a>
+          <a href="https://youtu.be/dyxVJl1pgtg" target="_blank">Video 3</a>
+        </div>
+        <!-- Chapter 2 -->
+        <div class="card">
+          <h3>Chapter 2</h3>
+          <a href="https://youtu.be/ioh5vNCfvzc" target="_blank">Video 1</a>
+          <a href="https://youtu.be/tdG95--X0q8" target="_blank">Video 2</a>
+          <a href="https://youtu.be/9RLDweAhpyg" target="_blank">Video 3</a>
+          <a href="https://youtu.be/R83Ncur2Lh4" target="_blank">Video 4</a>
+          <a href="https://youtu.be/Jcbo8Fa6NJo" target="_blank">Video 5</a>
+        </div>
+        <!-- Chapter 3 -->
+        <div class="card">
+          <h3>Chapter 3</h3>
+          <a href="https://youtu.be/KXtpzjGp6bs" target="_blank">Video 1</a>
+          <a href="https://youtu.be/iJXlOkmFhhI" target="_blank">Video 2</a>
+          <a href="https://youtu.be/byMR5ai-gQ4" target="_blank">Video 3</a>
+        </div>
+        <!-- Chapter 4 -->
+        <div class="card">
+          <h3>Chapter 4</h3>
+          <a href="https://youtu.be/XodbHQdWY3g" target="_blank">Video 1</a>
+          <a href="https://youtu.be/2lNZJUWPSHQ" target="_blank">Video 2</a>
+          <a href="https://youtu.be/YfhauwtnwhE" target="_blank">Video 3</a>
+        </div>
+        <!-- Chapter 5 -->
+        <div class="card">
+          <h3>Chapter 5</h3>
+          <a href="https://youtu.be/EJ6Jc5UFtfM" target="_blank">Video 1</a>
+          <a href="https://youtu.be/NBiPe84GbqM" target="_blank">Video 2</a>
+          <a href="https://youtu.be/ucU6VnHXLW8" target="_blank">Video 3</a>
+        </div>
+        <!-- Chapter 6 -->
+        <div class="card">
+          <h3>Chapter 6</h3>
+          <a href="https://youtu.be/JMM6vgdmcto" target="_blank">Video 1</a>
+          <a href="https://youtu.be/9JzN0yuxmSs" target="_blank">Video 2</a>
+        </div>
+        <!-- Chapter 7 -->
+        <div class="card">
+          <h3>Chapter 7</h3>
+          <a href="https://youtu.be/LKdMugfGVWA" target="_blank">Video 1</a>
+          <a href="https://youtu.be/eZx0uUZxkQk" target="_blank">Video 2</a>
+        </div>
+        <!-- Chapter 8 -->
+        <div class="card">
+          <h3>Chapter 8</h3>
+          <a href="https://youtu.be/Z4EkqVagGkQ" target="_blank">Video 1</a>
+          <a href="https://youtu.be/C5KcB2edVwU" target="_blank">Video 2</a>
+        </div>
+        <!-- Chapter 9 -->
+        <div class="card">
+          <h3>Chapter 9</h3>
+          <a href="https://youtu.be/ZSTzhi1y_9Q" target="_blank">Video 1</a>
+        </div>
+        <!-- Chapter 10 -->
+        <div class="card">
+          <h3>Chapter 10</h3>
+          <a href="https://youtu.be/bVIaA0SmiGQ" target="_blank">Video 1</a>
+          <a href="https://youtu.be/SAqpxa6Y28g" target="_blank">Video 2</a>
+          <a href="https://youtu.be/CNWLtBWt9N0" target="_blank">Video 3</a>
+        </div>
+        <!-- More -->
+        <div class="card">
+          <h3>More</h3>
+          <a href="https://youtu.be/eiytjbmppwU" target="_blank">Video 1</a>
+          <a href="https://youtu.be/k8jnZymUoJE" target="_blank">Video 2</a>
+          <a href="https://youtu.be/q336XSxE9aU" target="_blank">Video 3</a>
+          <a href="https://youtu.be/XP9AJgO_OMM" target="_blank">Video 4</a>
+          <a href="https://youtu.be/xhVIV1HKQEc" target="_blank">Video 5</a>
+          <a href="https://youtu.be/uEQg6EfZj7s" target="_blank">Video 6</a>
+          <a href="https://youtu.be/eSDmfIChXxc" target="_blank">Video 7</a>
+          <a href="https://youtu.be/s6ZuTBSsJDc" target="_blank">Video 8</a>
+          <a href="https://youtu.be/wdel2zJFpS0" target="_blank">Video 9</a>
+          <a href="https://youtu.be/nipkqxhkxaM" target="_blank">Video 10</a>
+          <a href="https://youtu.be/Cr13PEEytf8" target="_blank">Video 11</a>
+          <a href="https://youtu.be/RPTEdoCZNqE" target="_blank">Video 12</a>
+          <a href="https://youtu.be/QqLD7iEldpg" target="_blank">Video 13</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 2nd Paper Section -->
+    <section id="paper2">
+      <h2 class="section-title">2nd Paper</h2>
+      <div class="grid">
+        <!-- Chapter 1 -->
+        <div class="card">
+          <h3>Chapter 1</h3>
+          <a href="https://youtu.be/f31deNUPzy8" target="_blank">Video 1</a>
+          <a href="https://youtu.be/8pue0OmEB3M" target="_blank">Video 2</a>
+          <a href="https://youtu.be/h9LJp8jK8U0" target="_blank">Video 3</a>
+        </div>
+        <!-- Chapter 2 -->
+        <div class="card">
+          <h3>Chapter 2</h3>
+          <a href="https://youtu.be/XUEhYjSH6oc" target="_blank">Video 1</a>
+          <a href="https://youtu.be/Wl9o-zZkHBk" target="_blank">Video 2</a>
+          <a href="https://youtu.be/DNv956EE--M" target="_blank">Video 3</a>
+          <a href="https://youtu.be/bB2SeWwkqOk" target="_blank">Video 4</a>
+        </div>
+        <!-- Chapter 3 -->
+        <div class="card">
+          <h3>Chapter 3</h3>
+          <a href="https://youtu.be/PIjkQ9mEqQc" target="_blank">Video 1</a>
+          <a href="https://youtu.be/TftrBjUIN88" target="_blank">Video 2</a>
+          <a href="https://youtu.be/a9Y9cPu5ZKA" target="_blank">Video 3</a>
+        </div>
+        <!-- Chapter 4 -->
+        <div class="card">
+          <h3>Chapter 4</h3>
+          <a href="https://youtu.be/JmAkj6AA8bI" target="_blank">Video 1</a>
+          <a href="https://youtu.be/X_iXgHk9AsA" target="_blank">Video 2</a>
+          <a href="https://youtu.be/X73xts36cBo" target="_blank">Video 3</a>
+        </div>
+        <!-- Chapter 5 -->
+        <div class="card">
+          <h3>Chapter 5</h3>
+          <a href="https://youtu.be/C8RDlrNJvtM" target="_blank">Video 1</a>
+          <a href="https://youtu.be/btrAbzHJ1bk" target="_blank">Video 2</a>
+          <a href="https://youtu.be/7krunaiwCdQ" target="_blank">Video 3</a>
+        </div>
+        <!-- Chapter 6 -->
+        <div class="card">
+          <h3>Chapter 6</h3>
+          <a href="https://youtu.be/7krunaiwCdQ" target="_blank">Video 1</a>
+          <a href="https://youtu.be/bMPsbQFTxE4" target="_blank">Video 2</a>
+        </div>
+        <!-- More -->
+        <div class="card">
+          <h3>More</h3>
+          <a href="https://youtu.be/IIFAhtE4XcA" target="_blank">Video 1</a>
+          <a href="https://youtu.be/vOLc77PpuMs" target="_blank">Video 2</a>
+          <a href="https://youtu.be/IPXu7BGhr2w" target="_blank">Video 3</a>
+          <a href="https://youtu.be/Uv90MEhZVPo" target="_blank">Video 4</a>
+          <a href="https://youtu.be/WZaWkUQRD9M" target="_blank">Video 5</a>
+          <a href="https://youtu.be/t3YT_Rn5nGE" target="_blank">Video 6</a>
+          <a href="https://youtu.be/_di6vlF6NEU" target="_blank">Video 7</a>
+          <a href="https://youtu.be/1NxeF1R0I9A" target="_blank">Video 8</a>
+          <a href="https://youtu.be/CGNMQZArF4U" target="_blank">Video 9</a>
+          <a href="https://youtu.be/QDgt7Ri4pwI" target="_blank">Video 10</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Economics Videos. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
